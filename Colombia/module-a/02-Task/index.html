@@ -28,10 +28,10 @@
             });
             return `The longest word is <i class="font-bold">${ long }</i>.`
         }
-        const text = document.getElementById("text");
-        const message = document.getElementById("message");
+        const text = document.getElementById("text").value;
+        const message = document.getElementById("message").innerHTML;
         document.getElementById("calc").addEventListener("click", function() {
-            message.innerHTML = LongestWord(text.value);
+            message = LongestWord(text);
         });
     </script>
 </body>

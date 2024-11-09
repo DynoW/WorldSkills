@@ -18,12 +18,12 @@ p {
 
 .col {
     flex-direction: column;
-    border: 1px, black;
+    border: 1px solid black;
 }
 
 .row {
     flex-direction: row;
-    border: 1px, black;
+    border: 1px solid black;
 }
 
 .row>* {

@@ -19,9 +19,9 @@ function shiftedDiff(first, second) {
 	return nr;
 }
 
-string1 = document.getElementById("string1");
-string2 = document.getElementById("string2");
-message = document.getElementById("message");
+string1 = document.getElementById("string1").value;
+string2 = document.getElementById("string2").value;
+message = document.getElementById("message").innerHTML;
 document.getElementById("calc").addEventListener("click", function() {
-	message.innerHTML = shiftedDiff(string1.value, string2.value);
+	message = shiftedDiff(string1, string2);
 });

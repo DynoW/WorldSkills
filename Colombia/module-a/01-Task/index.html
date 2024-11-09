@@ -28,10 +28,10 @@
                 return `The word <i class="font-bold">${string}</i> is not a palindrome.`;
             }
         }
-        const word = document.getElementById("word");
-        const message = document.getElementById("message");
+        const word = document.getElementById("word").value;
+        const message = document.getElementById("message").innerHTML;
         document.getElementById("calc").addEventListener("click", function() {
-            message.innerHTML = checkPalindrome(word.value);
+            message = checkPalindrome(word);
         });
     </script>
 </body>
