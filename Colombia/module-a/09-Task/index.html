@@ -24,7 +24,13 @@
         </div>
     </main>
     <script>
-        // Work Here
+        function sumOfMax2Numbers(arr) {
+            if(arr.lenght<2)
+                return 0;
+            else
+                return arr.sort((a, b) => b - a).slice(0, 2).reduce((sum, curr) => sum + curr, 0);
+        }
+        console.log(sumOfMax2Numbers([1,2,3,4,5]));
     </script>
 </body>
 </html>
